@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8c89857bb1.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="image/c-low-resolution-logo-white-on-transparent-background.png" type="image/icon type">
+        <title>Web Portfolio</title>
+    </head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/cordova-low-resolution-logo-color-on-transparent-background.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about_me">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="text-introduce">
+                <p>Designer / Developer</p>
+                <h1>Hi, I'm <span>Charles Cordova</span><br>From Philippines</h1>
+            </div>
+            <div class="home-pic">
+                <img src="image/chaaaa.png">
+            </div>
+        </div>
+    </div><br>
+<!-- --------------------------ABOUT ME SECTION------------------------ -->
+    <div id="about_me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/charles.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>As someone who thrives in challenging environments, I am always seeking out new 
+                        opportunities to expand my skillset and take on new challenges. Creativity and 
+                        innovation are at the heart of everything I do, and I am constantly looking for 
+                        new ways to approach problems and find unique solutions. In my free time, I enjoy 
+                        exploring new hobbies and interests. Above all else, I believe in living life to 
+                        the fullest and embracing every opportunity that comes my way, no matter how big 
+                        or small.</p><br><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div><br>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Web Designing</li><br>
+                            <li><span>Web Development</span><br>Web App Development</li><br>
+                            <li><span>PHP</span><br>PHP Web Dev</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2013-2014 Elementary</span><br>Academia Del Christifidelis</li><br>
+                            <li><span>2017-2018 Junior Highschool</span><br>Academia Del Christifidelis</li><br>
+                            <li><span>2019-2020 Senior Highschool</span><br>University of Cebu Main Campus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------------------SERVICE SECTION-------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design refers to the process of creating and designing websites. This involves 
+                        the visual layout, functionality, and user experience of a website. The goal of web 
+                        design is to create a website that is not only aesthetically pleasing but also easy 
+                        to navigate and use.</p>
+                    <a href="https://www.interaction-design.org/literature/topics/web-design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design involves a combination of skills, including graphic design, user research, 
+                        and prototyping. The goal is to create a website or application that is easy to use, 
+                        visually appealing, and meets the needs of the user. A good UI/UX design can lead to 
+                        higher user engagement, increased satisfaction, and ultimately better business 
+                        outcomes. </p>
+                    <a href="https://careerfoundry.com/en/blog/ux-design/the-difference-between-ux-and-ui-design-a-laymans-guide/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-php"></i>
+                    <h2>PHP</h2>
+                    <p>PHP is an open-source scripting language used for web development, often used to create 
+                        dynamic websites and web applications with databases, and it has broad community support 
+                        and is highly portable.</p>
+                    <a href="https://www.freecodecamp.org/news/what-is-php-the-php-programming-language-meaning-explained/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-------------------------CONTACT----------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>charlescordova999@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>09912199216</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/charles.cordova.1654/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/CharlesCordova22"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/charles-cordova-870a43250/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div><br><br><br>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Charles Cordova</p> 
+        </div>
+    </div>
+    <script src="Navbar.js"></script>
+    <script src="GoogleSheetAPI.js"></script>
+</body>
+</html>
